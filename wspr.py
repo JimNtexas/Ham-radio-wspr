@@ -8,8 +8,10 @@ while success:
     print ("result: " + str(result.returncode))
     success = (result.returncode == 0)
     if success:
-        print("sleeping 4 minutes")
-        time.sleep(4*60)
+        print("sleeping 2 minutes")
+        time.sleep(2*60)
+        print("------------------------\n")
 
-print ("wspr stopped")
+localtime = time.asctime( time.localtime(time.time()) )
+print ("wspr stopped :", localtime)
 
